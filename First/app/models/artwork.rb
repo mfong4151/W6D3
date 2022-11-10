@@ -6,7 +6,7 @@ class Artwork < ApplicationRecord
 
     belongs_to :artist,
         foreign_key: :artist_id,
-        class_name: :User
+        class_name: :Users  
 
     has_many :shares,
         foreign_key: :artwork_id,
