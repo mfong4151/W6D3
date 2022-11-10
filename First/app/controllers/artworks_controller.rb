@@ -23,12 +23,12 @@ class ArtworksController < ApplicationController
     end
 
     def show
-        artwork = Artwork.find_by(:id params[:id])
+        artwork = Artwork.find_by(id: params[:id])
         render json: artwork
     end
 
     def update
-        artwork = Artwork.find_by(:id params[:id])
+        artwork = Artwork.find_by(id: params[:id])
 
         if artwork.update(artwork_params)
             redirect_to artwork_url(artwork.id)
