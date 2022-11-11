@@ -27,3 +27,5 @@ artwork3 = Artwork.create!(title: "Starry Night", image_url: "https://upload.wik
 artwork_share = ArtworkShare.create!(artwork_id: 2, viewer_id: 3)
 artwork_share = ArtworkShare.create!(artwork_id: 1, viewer_id: 2)
 artwork_share = ArtworkShare.create!(artwork_id: 3, viewer_id: 1)
+
+
